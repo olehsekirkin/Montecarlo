@@ -9,7 +9,6 @@ The technique is particularly useful when analyzing the potential outcomes of fi
 In summary, Monte Carlo simulation in finance enables a more sophisticated and realistic assessment of investment strategies by incorporating the uncertainty inherent in financial markets.
 
 # Getting started
-
 I tried to explain as much as I could as I was coding this one. Install yfinance, numpy, matplotlib and pandas.
 
 Line 54 to 59 are parameters you can change. 
@@ -18,12 +17,10 @@ This creates a .csv in your desktop, open with Excel and: 1) select column A, go
 Now you can clearly see your simulations data! :D
 
 # What I Learned
-
-· Even more about pandas and the uses this library has
-· Numpy (I will be using this in the future for sure)
-· Matplotlib
+- Even more about pandas and the uses this library has
+- Numpy (I will be using this in the future for sure)
+- Matplotlib
 
 # What's left
-
 Oh well, I feel like there is a lot left for this project. First I need to add the possibility of adding more than one stock to the simulation, creating a proper portfolio (correlations between them, etc), I need to fix the .csv (I know where the error is, I just don't know how to fix it right now) and I want to add some kind of "analyzer" of the data that the simulations creates. Any other suggestion is welcome!
 
