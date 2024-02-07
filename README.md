@@ -22,5 +22,5 @@ Now you can clearly see your simulations data! :D
 - Matplotlib
 
 # What's left
-Oh well, I feel like there is a lot left for this project. First I need to add the possibility of adding more than one stock to the simulation, creating a proper portfolio (correlations between them, etc), I need to fix the .csv (I know where the error is, I just don't know how to fix it right now) and I want to add some kind of "analyzer" of the data that the simulations creates. Any other suggestion is welcome!
+Oh well, I feel like there is a lot left for this project. First I need to add the possibility of adding more than one stock to the simulation, creating a proper portfolio (correlations between them, etc), I need to fix the .csv (I know where the error is, I just don't know how to fix it right now) and I want to add some kind of "analyzer" of the data that the simulations creates. Will probably use the dataset it creates for some Machine Learning model. Any other suggestion is welcome!
 
