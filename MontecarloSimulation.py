@@ -100,7 +100,24 @@ plt.ylabel("Stock Price")
 plt.legend()
 plt.show()
 
+# Plot the results
+plt.figure(figsize=(10, 6))
+plt.plot(simulated_prices.T, color="gray", alpha=0.1)
+plt.title(f"Monte Carlo Simulation - {ticker} Stock Price Scenarios")
+plt.xlabel("Days")
+plt.ylabel("Stock Price")
+plt.show()
+
+# Plot the results with confidence intervals (5th percentile, 95th percentile)
+plt.figure(figsize=(10, 6))
+plt.plot(simulation_data["Mean_Price"], label="Mean Price", color="black")
+plt.fill_between(simulation_data.index, simulation_data["5th_Percentile"], simulation_data["95th_Percentile"], color="gray", alpha=0.3)
+plt.title(f"Monte Carlo Simulation - {ticker} Stock Price Scenarios with Confidence Intervals")
+plt.xlabel("Days")
+plt.ylabel("Stock Price")
+plt.legend()
+plt.show()
+
 # Display estimated parameters
 print(f"Mean Daily Return: {mean_daily_return:.6f}")
 print(f"Volatility: {volatility:.6f}")
-
