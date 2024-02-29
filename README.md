@@ -25,21 +25,12 @@ Financial institutions use Monte Carlo simulations to assess credit risk by mode
 
 Overall, Monte Carlo simulations provide a powerful framework for decision-making in finance by incorporating the uncertainty inherent in financial markets and enabling stakeholders to make more informed and robust choices.
 
-## Getting started
-I tried to explain as much as I could as I was coding this one. Install yfinance, numpy, matplotlib and pandas.
+## Files guide
 
-Line 54 to 59 are parameters you can change. 
-
-This creates a .csv in your desktop, open with Excel and: 1) select column A, go to Data, Text to Columns, Delimited, Comma and Finish; II) select column A again, ctrl+shit+right arrow, Home, Format, Column width, 14.
-Now you can clearly see your simulations data! :D
-
-If not you can just use the simulation data as a dataset for whatever you need.
+Both files do a Monte Carlo simulation, MonteCarloSimulation.py does it on one stock since this was my first attempt at creating such algorithm on Python, whether in PortfolioMontecarlo.py you can already choose from various stocks (modify tickers, # Portfolio parameters) and the weights they have on the portfolio.
 
 ## What I Learned
 - Even more about pandas and the uses this library has
 - Numpy
 - Matplotlib
-
-## What's left
-Oh well, I feel like there is a lot left for this project. First I need to add the possibility of adding more than one stock to the simulation, creating a proper portfolio (correlations between them, etc), I need to fix the .csv (I know where the error is, I just don't know how to fix it right now) and I want to add some kind of "analyzer" of the data that the simulations creates. Will probably use the dataset it creates for some Machine Learning model. Any other suggestion is welcome!
 
