@@ -39,7 +39,7 @@ def monte_carlo_simulation(ticker, start_date, end_date, num_simulations, num_da
 
     return simulated_prices, mean_daily_return, volatility
 
-# Parameters that you can play with it :)
+# Parameters
 ticker = "NVDA" # Stock ticker symbol
 start_date = "2020-01-01"  # Start date for historical data
 end_date = "2024-02-02"  # End date for historical data
