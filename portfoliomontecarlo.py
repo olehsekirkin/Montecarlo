@@ -38,7 +38,7 @@ def plot_correlation_matrix(returns):
     correlation_matrix = returns.corr()
     plt.figure(figsize=(10, 8))
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
-    plt.title("Correlation Matrix of Stock Returns")
+    plt.title('Correlation Matrix of Stock Returns')
     plt.show()
 
 
@@ -58,10 +58,10 @@ def monte_carlo_simulation(tickers, weights, start_date, end_date, num_simulatio
 
 
 # Portfolio parameters
-tickers = ["NVDA", "AAPL", "MSFT"]
+tickers = ['NVDA', 'AAPL', 'MSFT']
 weights = np.array([0.4, 0.3, 0.3])
-start_date = "2020-01-01"
-end_date = "2024-02-02"
+start_date = '2020-01-01'
+end_date = '2024-02-02'
 num_simulations = 150
 num_days = 100
 
@@ -70,11 +70,11 @@ simulated_prices, mean_daily_return, volatility, returns = monte_carlo_simulatio
 
 plt.figure(figsize=(10, 6))
 plt.plot(simulated_prices)
-plt.title("Monte Carlo Simulation - Portfolio Value Scenarios")
-plt.xlabel("Days")
-plt.ylabel("Portfolio Value")
+plt.title('Monte Carlo Simulation - Portfolio Value Scenarios')
+plt.xlabel('Days')
+plt.ylabel('Portfolio Value')
 plt.show()
 
-print(f"Mean Daily Return: {mean_daily_return:.6f}")
-print(f"Volatility: {volatility:.6f}")
+print(f'Mean Daily Return: {mean_daily_return:.6f}')
+print(f'Volatility: {volatility:.6f}')
 
